@@ -1,0 +1,14 @@
+
+task downloadYamnetModel(type: Download) {
+    src 'https://storage.googleapis.com/mediapipe-models/audio_classifier/yamnet/float32/1/yamnet.tflite'
+    dest project.ext.ASSET_DIR + '/yamnet.tflite'
+    overwrite false
+}
+
+task downloadAudioForTest(type: Download) {
+    src 'https://storage.googleapis.com/mediapipe-models/audio_classifier/yamnet/float32/1/yamnet.tflite'
+    dest project.ext.TEST_ASSET_DIR + '/cat_sound.wav'
+    overwrite false
+}
+
+preBuild.dependsOn downloadYamnetModel, downloadAudioForTest
