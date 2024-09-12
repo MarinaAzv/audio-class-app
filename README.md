@@ -1,5 +1,4 @@
-#  Android Demo
-
+# Real-time audio rating mobile app under current development/improvement to be used by hearing impaired drivers
 ### Overview
 
 [Yamnet classification](https://storage.googleapis.com/download.tensorflow.org/models/tflite/task_library/audio_classification/android/lite-model_yamnet_classification_tflite_1.tflite)
